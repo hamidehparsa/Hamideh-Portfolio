@@ -52,7 +52,7 @@ body {
   border-radius: 50%;
 }
 
-.about-me h3 {
+.subheading h3 {
   font-size: 49px;
   line-height: 57px;
   color: var(--branding-color);
@@ -80,4 +80,12 @@ body {
   color: var(--branding-color);
   font-size: 25px;
   line-height: 28px;
+}
+
+.skills {
+  background-color: #161616;
+}
+
+.skills fa-brands {
+  font-size: 36px;
 }
