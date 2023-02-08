@@ -17,50 +17,71 @@ body {
     #727272 100%
   );
 }
+.hero-section {
+  margin-left: 0;
+  margin-block-start: 0;
+}
+
+.introduction {
+  margin-left: 0;
+  padding-left: 0;
+}
+.introduction-text {
+  margin-block-start: 0;
+  padding-left: 0;
+}
 
 .introduction h3 {
-  font-size: 39px;
-  line-height: 46px;
+  font-size: 2.4rem;
+  line-height: 2.87rem;
+  color: var(--secondary-color);
+  margin-left: 0;
+  padding-left: 0;
+  margin-block-start: 0;
 }
 
 .introduction h2 {
-  font-size: 57px;
-  line-height: 67px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-left: 1rem;
 }
 
 .introduction h1 {
-  font-size: 78px;
-  line-height: 91px;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
   color: var(--branding-color);
+  margin-block-start: 0;
 }
 
 .introduction h4 {
   color: var(--third-color);
-  font-size: 86px;
+  font-size: 5.37rem;
+  margin-left: 0;
 }
 
 .introduction h5 {
   color: var(--third-color);
-  font-size: 27px;
+  font-size: 1.68rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2rem;
   text-transform: uppercase;
+  margin-left: 0;
 }
 .profile-picture {
-  width: 520px;
-  border: solid 1px black;
-  border-radius: 50%;
+  width: 400px;
+  margin-right: 6.5rem;
 }
 
 .subheading h3 {
-  font-size: 49px;
-  line-height: 57px;
+  font-size: 3rem;
+  line-height: 3.5rem;
   color: var(--branding-color);
+  margin-left: 0;
 }
 
 .about-me p {
-  font-size: 29px;
-  line-height: 34px;
+  font-size: 1.81rem;
+  line-height: 2.12rem;
 }
 
 .about-me-btn {
@@ -71,21 +92,130 @@ body {
 
 .about-me-btn p {
   font-family: var(--secondary-font);
-  font-size: 33px;
-  line-height: 37px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 0.5rem;
 }
 
 .about-me-btn a {
   font-family: var(--secondary-font);
   color: var(--branding-color);
-  font-size: 25px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.5rem;
 }
 
 .skills {
   background-color: #161616;
 }
 
-.skills fa-brands {
-  font-size: 36px;
+.skills i {
+  font-size: 3rem;
+}
+.skills p {
+  font-size: 1.5rem;
+}
+
+.vscode {
+  color: var(--secondary-color);
+}
+.bordered-img {
+  box-sizing: border-box;
+  background: rgba(37, 37, 37, 0.39);
+  border: 3px solid var(--branding-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+
+/* Styling Project Section*/
+.projects {
+  background-color: #161616;
+}
+
+.projects h4 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.projects p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-btn {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 2px solid var(--branding-color);
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: var(--secondary-color);
+}
+
+.project-btn:hover {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+
+/* Styling navbar*/
+.navbar {
+  background: #828282;
+}
+
+.navbar-brand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #272727;
+  padding-left: 0;
+}
+.navbar-brand:hover {
+  color: var(--branding-color);
+}
+
+.navbar-brand span {
+  color: white;
+}
+
+.navbar-brand:hover > * {
+  color: var(--branding-color);
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-toggler-icon :hover {
+  color: var(--branding-color);
+}
+
+.nav-link {
+  margin-right: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--branding-color);
+}
+
+@media (max-width: 700px) {
+  .subheading h3 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile-picture {
+    display: none;
+  }
 }

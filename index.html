@@ -8,12 +8,13 @@
       content="Hamideh Parsaeian | Frontend developer "
     />
     <title>Hamideh Parsaeian's Portfolio</title>
-    <link
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,144 +28,274 @@
     <link rel="stylesheet" href="/style/portfolio.css" />
   </head>
   <body>
-    <div class="introduction d-flex justify-content-between">
-      <div class="introduction-text">
-        <h3>Hello, I am</h3>
-        <h1>< Hamideh Parsaeian /></h1>
-        <h2>Junior Frontend Developer</h2>
-        <div class="d-flex justify-content-between">
-          <div class="years-of-experience d-flex justify-content-around">
-            <h4>1</h4>
-            <h5 class="mt-3">
-              year of <br />
-              experience
-            </h5>
-          </div>
-          <div class="number-of-projects d-flex justify-content-around">
-            <h4>13</h4>
-            <h5 class="mt-3">
-              Projects Completed <br />
-              around the world
-            </h5>
-          </div>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Hamideh<span>Parsaeian</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#about-me"
+                title=""
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#certificates"
+                title=""
+                >Certificates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#projects"
+                title=""
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                title=""
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div>
-        <img
-          src="images/Hamideh.jpg"
-          class="profile-picture img-fluid"
-          alt="Hamideh Parsaeian Profile Picture"
-        />
+    </nav>
+  <!--End of Navbar-->
+
+  <!--Header section including introduction and profile image---->
+    <div class="header-section mt-5">
+      <div class="introduction d-flex justify-content-between">
+        <div class="introduction-text mt-5 mr-5 pt-5">
+          <h3>Hello, I am</h3>
+          <h1>< Hamideh Parsaeian /></h1>
+          <h2>Junior Frontend Developer</h2>
+          <div class="d-flex justify-content-between">
+            <div class="years-of-experience d-flex justify-content-around">
+              <h4>1</h4>
+              <h5 class="mt-3">
+                year of <br />
+                experience
+              </h5>
+            </div>
+            <div class="number-of-projects d-flex justify-content-around">
+              <h4>3</h4>
+              <h5 class="mt-3">
+                Projects Completed <br />
+                around the world
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!--Profile Image-->
+        <div class="introduction-img mt-5 pt-5">
+          <img
+            src="images/Hamideh.jpg"
+            class="profile-picture bordered-img img-fluid"
+            alt="Hamideh Parsaeian Profile Picture"
+          />
+        </div>
+        <!--End of Profile Image-->
       </div>
     </div>
+    <!--End of Header Section-->
+
+    <!--About me Section-->
     <div class="subheading about-me">
+      <h3 id="about-me">About me( )</h3>
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <h3>About me()</h3>
+          <div class="col-md-8">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              velit turpis, finibus eu condimentum ut, posuere at ipsum.
-              Maecenas vel consequat mauris. Quisque sodales ipsum aliquet
-              aliquam placerat. Proin varius condimentum sapien. Mauris quis
-              elit nibh. Morbi ut facilisis nisl. Duis et leo ut odio rhoncus
-              porta a a dui. Nullam arcu nibh, bibendum in enim sed, ullamcorper
-              feugiat nunc.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                velit turpis, finibus eu condimentum ut, posuere at ipsum.
+                Maecenas vel consequat mauris. Quisque sodales ipsum aliquet
+                aliquam placerat. Proin varius condimentum sapien. Mauris quis
+                elit nibh. Morbi ut facilisis nisl. Duis et leo ut odio rhoncus
+                porta a a dui. Nullam arcu nibh, bibendum in enim sed, ullamcorper
+                feugiat nunc.
             </p>
           </div>
-          <div class="col-6">
-            <div class="about-me-btn">
-              <p>Fullstack Developer</p>
-              <a href="#">Projects</a>
+          <!--About me buttons-->
+          <div class="col-md-4">
+            <div class="about-me-btn mt-2 pt-1 pr-1">
+              <p>Frontend Developer</p>
+              <a href="#projects">Projects</a>
             </div>
-            <div class="about-me-btn">
-              <p>My Certificates</p>
-              <a href="#">Certificates</a>
+              <div class="about-me-btn mt-5 pt-2 pr-1">
+                <p>My Certificates</p>
+                <a href="#certificates">Certificates</a>
+              </div>
             </div>
           </div>
+          <!--End of About me Buttons-->
         </div>
       </div>
     </div>
-    <div class="subheading skills">
-      <h3>Skills()</h3>
+    <!--End of About me Section-->
+
+    <!--Skills section-->
+    <div class="subheading skills pt-3">
+      <h3>Skills( )</h3>
       <div class="container">
         <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="md-3">
-                
-            </div>
-        </div>
-        <div class="skill-icon">
+          <div class="skill-icon col-md-3 text-center">
             <i class="fa-brands fa-html5"></i>
             <p class="skill-name">HTML</p>
-        </div>
-        <div class="skill-icon">
+          </div>
+          <div class="skill-icon col-md-3 text-center">
             <i class="fa-brands fa-css3-alt"></i>
             <p class="skill-name">CSS</p>
-        </div>
-        <div class="skill-icon">
+          </div>
+          <div class="skill-icon col-md-3 text-center">
             <i class="fa-brands fa-square-js"></i>
             <p class="skill-name">JavaScript</p>
-        </div>
-        <div class="skill-icon">
+          </div>
+          <div class="skill-icon col-md-3 text-center">
             <i class="fa-brands fa-react"></i>
             <p class="skill-name">React</p>
+          </div>
         </div>
-        <div class="skill-icon">
+        <div class="row">
+          <div class="skill-icon col-md-3 text-center">
             <i class="fa-brands fa-bootstrap"></i>
             <p class="skill-name">Bootstrap</p>
-        </div>
-        <div class="skill-icon">
+          </div>
+          <div class="skill-icon col-md-3 text-center">
             <div>
-                <i class="fa-brands fa-git-alt"></i>
-                <i class="fa-brands fa-git" id="git"></i>
+              <i class="fa-brands fa-git-alt text-center"></i>
+              <i class="fa-brands fa-git" id="git"></i>
             </div>
             <p class="skill-name">Git</p>
-        </div>
-        <div class="skill-icon">
-            <i class="fa-brands fa-github"></i>    
+          </div>
+          <div class="skill-icon col-md-3 text-center">
+            <i class="fa-brands fa-github"></i>
             <p class="skill-name">GitHub</p>
-        </div>
-        <div class="skill-icon">
-            <img src="images/vsocde icon.png" alt="" width="20px">
+          </div>
+          <div class="skill-icon vscode col-md-3 text-center">
+            <img src="images/vscodeicon.png" alt="" width="48px" />
             <p class="skill-name">VS Code</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="subheading certificates">
+    <!--End of Skills Section-->
+
+    <!--Certificates Section-->
+    <div class="subheading certificates pt-3" id="certificates">
+      <h3>Certificates( )</h3>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="" alt="" />
+            <img
+              src="images/certificates/shecodesbasic-certificate.png"
+              alt=""
+              class="certificate-img img-fluid bordered-img"
+            />
           </div>
           <div class="col-md-6">
-            <img src="" alt="" />
-          </div>
-          <div class="row">
-          <div class="col-md-6">
-            <img src="" alt="" />
-          </div>
-          <div class="col-md-6">
-            <img src="" alt="" />
+            <img
+              src="images/certificates/shecodesplus-certificate.png"
+              alt=""
+              class="certificate-img img-fluid bordered-img"
+            />
           </div>
         </div>
       </div>
     </div>
-    <div class="subheading projects">
-        <h3>Projects()</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-6">
-                    <h4>Project Title</h4>
-                    <p>Eum earum possimus qui sunt possimus aut tempora aliquid ut veritatis architecto et voluptate enim id sint possimus. Aut nobis est fuga officia et nemo nulla et quod quia ex dolor placeat rem repudiandae voluptas.</p>
-                </div>
-            </div>
+    <!--End of Certificates Section-->
+    
+    <!--Projects Section-->
+    <div class="subheading projects pt-3" id="projects">
+      <h3>Projects( )</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/project/yogurt.jpg"
+              class="bordered-img project-img img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h4>Project Title</h4>
+            <p>
+              Eum earum possimus qui sunt possimus aut tempora aliquid ut
+              veritatis architecto et voluptate enim id sint possimus. Aut nobis
+              est fuga officia et nemo nulla et quod quia ex dolor placeat rem
+              repudiandae voluptas.
+            </p>
+            <a href="#" class="btn project-btn">Go to website</a>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/project/yogurt.jpg"
+              class="bordered-img project-img img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h4>Project Title</h4>
+            <p>
+              Eum earum possimus qui sunt possimus aut tempora aliquid ut
+              veritatis architecto et voluptate enim id sint possimus. Aut nobis
+              est fuga officia et nemo nulla et quod quia ex dolor placeat rem
+              repudiandae voluptas.
+            </p>
+            <a href="#" class="btn project-btn">Go to website</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/project/yogurt.jpg"
+              class="bordered-img project-img img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h4>Project Title</h4>
+            <p>
+              Eum earum possimus qui sunt possimus aut tempora aliquid ut
+              veritatis architecto et voluptate enim id sint possimus. Aut nobis
+              est fuga officia et nemo nulla et quod quia ex dolor placeat rem
+              repudiandae voluptas.
+            </p>
+            <a href="#" class="btn project-btn">Go to website</a>
+          </div>
+        </div>
+      </div>
     </div>
+    <!--End of Projects Section-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
   </body>
 </html>
