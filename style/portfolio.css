@@ -17,11 +17,53 @@ body {
     #727272 100%
   );
 }
-.hero-section {
-  margin-left: 0;
-  margin-block-start: 0;
+
+/* Styling navbar*/
+.navbar {
+  background: #828282;
 }
 
+.navbar-brand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #272727;
+  padding-left: 0;
+}
+.navbar-brand:hover {
+  color: var(--branding-color);
+}
+
+.navbar-brand span {
+  color: white;
+}
+
+.navbar-brand:hover > * {
+  color: var(--branding-color);
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-toggler-icon :hover {
+  color: var(--branding-color);
+}
+
+.nav-link {
+  margin-right: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--branding-color);
+}
+
+/* Styling introduction section*/
 .introduction {
   margin-left: 0;
   padding-left: 0;
@@ -67,6 +109,8 @@ body {
   text-transform: uppercase;
   margin-left: 0;
 }
+
+/* Styling profile image*/
 .profile-picture {
   width: 400px;
   margin-right: 6.5rem;
@@ -78,6 +122,8 @@ body {
   color: var(--branding-color);
   margin-left: 0;
 }
+
+/* Styling about me section*/
 
 .about-me p {
   font-size: 1.81rem;
@@ -105,6 +151,7 @@ body {
   padding: 0.5rem;
 }
 
+/* Styling skills section*/
 .skills {
   background-color: #161616;
 }
@@ -163,48 +210,28 @@ body {
   text-decoration: none;
 }
 
-/* Styling navbar*/
-.navbar {
-  background: #828282;
-}
-
-.navbar-brand {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  color: #272727;
-  padding-left: 0;
-}
-.navbar-brand:hover {
-  color: var(--branding-color);
-}
-
-.navbar-brand span {
-  color: white;
-}
-
-.navbar-brand:hover > * {
-  color: var(--branding-color);
-}
-
-.navbar-toggler-icon {
-  color: white;
-}
-
-.navbar-toggler-icon :hover {
-  color: var(--branding-color);
-}
-
-.nav-link {
-  margin-right: 1rem;
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
+/*Styling footer Section*/
+footer a {
   text-decoration: none;
+  color: var(--third-color);
+  text-align: center;
 }
-.nav-link:hover {
+
+footer a:hover {
+  color: var(--branding-color);
+}
+
+/* Styling Contact Section*/
+.contact-me h4,
+p {
+  margin-left: 1rem;
+}
+.contact-me a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.contact-me a:hover {
+  text-decoration: none;
   color: var(--branding-color);
 }
 
