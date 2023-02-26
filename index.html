@@ -8,15 +8,12 @@
       content="Hamideh Parsaeian | Frontend developer "
     />
     <title>Hamideh Parsaeian's Portfolio</title>
-     <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -26,63 +23,61 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/style/portfolio.css" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/">Hamideh<span>Parsaeian</span></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#about-me"
-                title=""
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#certificates"
-                title=""
-                >Certificates</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#projects"
-                title=""
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="contact.html"
-                title=""
-                >Contact</a
-              >
-            </li>
-          </ul>
+    <div class="container-fluid">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/">Hamideh<span>Parsaeian</span></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#about-me"
+                  title=""
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#certificates"
+                  title=""
+                  >Certificates</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects" title="">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" title="">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  <!--End of Navbar-->
+      </nav>
+      <!--End of Navbar-->
 
   <!--Header section including introduction and profile image---->
     <div class="header-section mt-5">
@@ -236,6 +231,7 @@
               src="images/project/Cheescake.jpg"
               class="bordered-img project-img img-fluid"
               alt=""
+              width="100%"
             />
           </div>
           <div class="col-md-6">
@@ -302,5 +298,8 @@
       crossorigin="anonymous"
     ></script>
 
+
+    </div>
+    
   </body>
 </html>

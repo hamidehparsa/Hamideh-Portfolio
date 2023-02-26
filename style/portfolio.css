@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
 :root {
   --branding-color: #70ff00;
   --secondary-color: #e0e0e0;
